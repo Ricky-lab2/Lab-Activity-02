@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pet Shop</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#gallery">Gallery</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+  <section id="home" class="hero">
+    <h1>Welcome to Pet Shop</h1>
+    <p>Your one-stop shop for all pet needs!</p>
+    <button class="cta" onclick="openModal()">Shop Now</button>
+  </section>
+  <section id="about">
+    <h2>About Us</h2>
+    <p>We provide the best products and services for your furry friends.</p>
+    <img src="img/logo.webp" alt="About Us">
+  </section>
+  <section id="services">
+    <h2>Our Services</h2>
+    <p>From grooming to pet supplies, we've got you covered!</p>
+    <img src="img/g1.webp" alt="Our Services">
+  </section>
+  <section id="gallery">
+    <h2>Gallery</h2>
+    <div class="gallery">
+      <img src="img/gal1.jpg" alt="Gallery Image 2">
+      <img src="img/gal3.webp" alt="Gallery Image 3">
+    </div>
+  </section>
+  <section id="contact">
+    <h2>Contact Us</h2>
+    <p>Get in touch with us for more information.</p>
+  </section>
+  <footer>
+    <p>&copy; 2025 Pet Shop. All rights reserved.</p>
+    <div class="social-media">
+      <a href="#"><img src="img/Facebook_logo_(square).png" alt="Facebook">Facebook</a>
+      <a href="#"><img src="img/x.png" alt="Twitter">Twitter</a>
+      <a href="#"><img src="img/insta.webp" alt="Instagram">Instagram</a>
+    </div>
+  </footer>
+
+  <div id="modal" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal()">&times;</span>
+      <h2>Featured Products</h2>
+      <p>Check out our best sellers!</p>
+      <ul class="product-list">
+        <li><img src="img/F1.jpg" alt="Product 1">Dog Foods</li>
+        <li><img src="img/F2.jpg" alt="Product 2">Pet Equipments</li>
+        <li><img src="img/F3.jpg" alt="Product 3">Pet Care</li>
+      </ul>
+      <h3>Sign Up for Special Offers</h3>
+      <form>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+        <button type="submit">Sign Up</button>
+      </form>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
